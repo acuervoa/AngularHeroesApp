@@ -1,7 +1,13 @@
-<h3>Héroe <small>nombre...</small> </h3>
+<h3>Héroe <small>{{ heroe.component }}</small> </h3>
 <button [routerLink]="['/heroes']"
     class="btn btn-outline-danger">
     Regresar
+</button>
+
+<button (click)="agregarNuevo(forma)"
+    type="button"
+    class="btn btn-outline-success">
+    Nuevo héroe
 </button>
 <hr>
 
